@@ -20,6 +20,6 @@ model Cep {
   district   String
   address    String
   statusText String  
-  lat        Float 
-  long       Float
+  lat        Float? 
+  long       Float?
 }

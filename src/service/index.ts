@@ -36,8 +36,8 @@ export async function fetchLatLong(CEP: string){
         if(data.status ==='ZERO_RESULTS'){
             return             
         }        
-        const lat = data.results[0].geometry.location.lat;
-        const long = data.results[0].geometry.location.lng;
+        let lat = data.results[0].geometry.location.lat;
+        let long = data.results[0].geometry.location.lng;
         const response = {
             lat,
             long
