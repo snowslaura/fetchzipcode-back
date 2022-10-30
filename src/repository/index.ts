@@ -1,4 +1,4 @@
-import { prisma } from '../database.js';
+import { prisma } from '../../database.js';
 import { Cep } from '@prisma/client';
 
 export type CreateCepData = Omit<Cep, "id">;

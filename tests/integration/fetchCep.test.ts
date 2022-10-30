@@ -1,7 +1,7 @@
 import supertest from "supertest";
-import app from "../../src/app.js";
+import app from "../../app.js";
 import { deleteAllData } from "./factories/deleteAllData.js";
-import { prisma } from "../../src/database.js";
+import { prisma } from "../../database.js";
 
 const agent = supertest(app)
 
